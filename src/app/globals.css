@@ -14,8 +14,18 @@
   }
 }
 
+/* Add base styles to ensure full height */
+html,
 body {
+  @apply h-full antialiased;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  @apply h-full;
+}
+
+* {
+  @apply box-border p-0 m-0;
 }
